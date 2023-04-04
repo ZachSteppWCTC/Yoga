@@ -1,0 +1,278 @@
+body
+{
+    background-color:#40407A;
+    margin: 0;
+    color:#40407A;
+    font-family: Verdana;
+}
+.wrapper
+{
+    background-color:#F5F5F5;
+    padding:2em;
+}
+header
+{
+    background-color: #40407A;
+    text-decoration-color: #FFFFFF;
+    background-image: url("sunrise.jpg");
+    background-size: 100% 100%;
+    color: #ffffff;
+    margin-top: 50px;
+    font-size: 90%;
+    min-height: 200px;
+}
+nav
+{
+    text-align: center;
+    text-align: right;
+    background-color: white;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+}
+dt
+{
+    font-weight: bold;
+}
+a
+{
+    text-decoration: none;
+}
+footer
+{
+    text-align:center;
+    font-style: italic;
+    font-size: small;
+    clear: right;
+}
+dd
+{
+    font-size: 90%;
+}
+.home
+{
+    height:20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+.content
+{
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+.mathero
+{
+    height: 300px;
+    background-image: url("yogamat.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+.loungehero
+{
+    height: 300px;
+    background-image: url("yogalounge.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+h2
+{
+margin: 0;
+}
+
+* { box-sizing: border-box; }
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding-right: 2em;
+    font-size:1.2em;
+}
+
+nav li
+{
+    display: inline-block;
+    padding-left: 2em;
+    width: 30%;
+}
+
+nav :link
+{
+    color: #3F2860;
+}
+
+nav :visited
+{
+    color: #497777;
+}
+
+nav :hover
+{
+    color: #A26100;
+}
+
+header :link
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header :visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header :hover
+{
+    color: #EDF5F5;
+    text-decoration: none;
+}
+
+section
+{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#flow
+{
+    display: block;
+}
+
+table
+{
+    border-color: #40407A;
+    margin-bottom: 1em;
+    border-width: 1px;
+    min-width: 400px;
+    border-collapse: collapse;
+    border-style: solid;
+}
+
+td
+{
+    padding: 0.5em;
+    border-width: 1px;
+    border-color: #40407A;
+    border-style: solid;
+
+}
+th
+{
+    padding: 0.5em;
+    border-width: 1px;
+    border-color: #40407A;
+    border-style: solid;
+}
+tr:nth-of-type(odd)
+{
+    background-color: #D7E8E9;
+}
+caption
+{
+    font-weight: bold;
+    font-size: 120%;
+    margin: 1em;
+}
+.onehalf
+{
+    float:left;
+    width:50%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    width:60%;
+    max-width: 40em;
+    grid-gap: 1em;
+    column-count: 2;
+    column-width: 9em;
+    column-width: 1fr;
+    rows: auto;
+}
+input, datalist textarea
+{
+    margin-bottom: .5em
+    grid-column: 2;
+    width: 18em;
+}
+@media only screen and (min-width: 600px)
+{
+
+    nav ul
+    {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    nav li
+    {
+        width: 7em;
+    }
+
+    section
+    {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .mathero
+    {
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    .loungehero
+    {
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    #flow
+    {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1024px)
+{
+    header
+    {
+        font-size: 120%;
+    }
+    nav
+    {
+        font-weight: bold;
+    }
+    .home
+    {
+        height: 50vh;
+        padding-top: 5em;
+        padding-left: 8em;
+    }
+    .content
+    {
+        height: 30vh;
+        padding-top: 2em;
+        padding-left: 8em;
+    }
+    .wrapper
+    {
+        margin:auto;
+        width: 80%;
+    }
+}
